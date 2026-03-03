@@ -1,12 +1,15 @@
-# Terraform module for ACK Auto-scaling Infrastructure on Alibaba Cloud
+Terraform module for ACK Auto-scaling Infrastructure on Alibaba Cloud
 
-terraform-alicloud-ack-services
+# terraform-alicloud-ack-services
 
-======================================
 
 English | [简体中文](https://github.com/alibabacloud-automation/terraform-alicloud-ack-services/blob/main/README-CN.md)
 
-This Terraform module creates a high-availability and auto-scaling Kubernetes infrastructure on Alibaba Cloud using **Container Service for Kubernetes (ACK)**. The solution supports Kubernetes **cluster-autoscaler** and **Horizontal Pod Autoscaler (HPA)** for elastic scaling to enhance resource utilization and reduce costs.The module automatically provisions VPC, multi-zone VSwitches, security groups, ACK managed cluster, node pools, ROS stack, and essential RAM roles. It includes pre-configured addons such as Terway network plugin, CSI storage plugins, Logtail, and Node Local DNS for production-ready deployments. 
+This Terraform module creates a high-availability and auto-scaling Kubernetes infrastructure on Alibaba Cloud using **Container Service for Kubernetes (ACK)**. The solution supports Kubernetes **cluster-autoscaler** and **Horizontal Pod Autoscaler (HPA)** for elastic scaling to enhance resource utilization and reduce costs.
+
+This module implements the solution architecture for [Efficient orchestration and management of containerized applications](https://www.aliyun.com/solution/tech-solution/ack-services), involving the creation and deployment of resources such as Virtual Private Cloud (VPC), Virtual Switch (VSwitch), NAT Gateway, Container Service for Kubernetes (ACK), Application Load Balancer (ALB) and Elastic Compute Service (ECS).
+
+The module automatically provisions VPC, multi-zone VSwitches, security groups, ACK managed cluster, node pools, ROS stack, and essential RAM roles. It includes pre-configured addons such as Terway network plugin, CSI storage plugins, Logtail, and Node Local DNS for production-ready deployments. 
 
 ## Usage
 

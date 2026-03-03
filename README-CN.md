@@ -1,12 +1,14 @@
-# 阿里云 ACK 弹性伸缩基础设施 Terraform 模块
+阿里云 ACK 弹性伸缩基础设施 Terraform 模块
 
-terraform-alicloud-ack-services
-
-======================================
+# terraform-alicloud-ack-services
 
 [English](https://github.com/alibabacloud-automation/terraform-alicloud-ack-services/blob/main/README.md) | 简体中文
 
-此 Terraform 模块在阿里云上创建高可用和弹性伸缩的 Kubernetes 基础设施，使用**容器服务 Kubernetes 版（ACK）**。本方案支持 Kubernetes **cluster-autoscaler** 和**水平 Pod 自动伸缩（HPA）**进行弹性伸缩，提升资源利用率，缩减资源成本。该模块自动创建 VPC、多可用区交换机、安全组、ACK 托管集群、节点池、ROS 栈和必需的 RAM 角色。包含预配置插件如 Terway 网络插件、CSI 存储插件、Logtail 和 Node Local DNS，实现生产就绪的部署。
+此 Terraform 模块在阿里云上创建高可用和弹性伸缩的 Kubernetes 基础设施，使用**容器服务 Kubernetes 版（ACK）**。本方案支持 Kubernetes **cluster-autoscaler** 和**水平 Pod 自动伸缩（HPA）**进行弹性伸缩，提升资源利用率，缩减资源成本。
+
+本模块实现了解决方案[高效编排与管理容器化应用](https://www.aliyun.com/solution/tech-solution/ack-services)的架构，涉及到专有网络（VPC）、虚拟交换机（VSwitch）、专有网络 NAT 网关（NAT Gateway）、容器服务 Kubernetes 版（ACK）、应用型负载均衡（ALB）、云服务器（ECS）等资源的创建。
+
+该模块自动创建 VPC、多可用区交换机、安全组、ACK 托管集群、节点池、ROS 栈和必需的 RAM 角色。包含预配置插件如 Terway 网络插件、CSI 存储插件、Logtail 和 Node Local DNS，实现生产就绪的部署。
 
 ## 用法
 
